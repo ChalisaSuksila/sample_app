@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
-  get 'static_pages/help'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -58,10 +54,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   Rails.application.routes.draw do
-  get 'static_pages/home'
-
-  get 'static_pages/help'
-
+ get 'static_pages/home'
+ get 'static_pages/help'
+ get 'static_pages/about'
  root 'application#hello'
-end 
+end
 end
